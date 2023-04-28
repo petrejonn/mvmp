@@ -2,3 +2,24 @@
 tortoise_orm = "app.core.config.TORTOISE_ORM"
 location = "./migrations"
 src_folder = "./."
+
+[tool.poetry]
+name = "mvmp"
+version = "0.1.0"
+description = "Multi-vendor Market Place"
+authors = ["petrejonn <petrejonn@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.95.1"}
+tortoise-orm = "^0.19.3"
+aerich = "^0.7.1"
+asyncpg = "^0.27.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
